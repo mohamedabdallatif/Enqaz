@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شركة ركائز إنجاز للإستقدام</title>
+<meta name="description" content="شركة ركائز إنجاز للإستقدام — استقدام ونقل خدمات العمالة المنزلية والمهنية بإجراءات نظامية واضحة.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#top" class="logo">
+      <img data-logo alt="الشعار">
+      <span data-company>شركة ركائز إنجاز للإستقدام</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+    <ul id="menu">
+      <li><a href="#top">الرئيسية</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#transfer">نقل خدمات</a></li>
+      <li><a href="#how">كيف نعمل</a></li>
+      <li data-nav-gallery><a href="#gallery">معرض الصور</a></li>
+      <li><a href="#countries">الدول</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge hidden" data-show-license>شركة مرخصة · رقم الترخيص <span data-license></span></span>
+        <h1 data-company>شركة ركائز إنجاز للإستقدام</h1>
+        <p data-tagline></p>
+        <div class="actions">
+          <a href="#contact" class="btn btn-wa">ابدأ طلبك الآن</a>
+          <a href="#countries" class="btn btn-outline">تصفح الدول</a>
+        </div>
+      </div>
+      <div class="hero-art"><img data-logo alt="الشعار"></div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid" id="statsGrid"></div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">خدماتنا</span>
+        <h2>كل ما تحتاجه لتوفير العمالة</h2>
+        <p class="lead">مجموعة متكاملة من خدمات الاستقدام ونقل الخدمات لتلبية احتياجات منزلك وعائلتك.</p>
+      </div>
+      <div class="grid grid-3" id="serviceCards"></div>
+    </div>
+  </section>
+
+  <section id="transfer" class="white">
+    <div class="container transfer-wrap">
+      <div>
+        <span class="eyebrow">خدمة مميزة</span>
+        <h2>نقل خدمات وتنازل العمالة</h2>
+        <p class="lead" style="margin-bottom:24px">إجراءات نظامية وموثقة لنقل خدمات العمالة داخل المملكة، مع مراعاة حقوق جميع الأطراف.</p>
+        <div class="feature-list" id="transferFeatures"></div>
+      </div>
+      <div class="cta-box">
+        <h3>لا تتردد في التواصل معنا</h3>
+        <p>فريقنا جاهز للرد على استفساراتك وتنفيذ طلبات التنازل أو مساعدتك في اختيار عمالة جديدة.</p>
+        <div class="row">
+          <a class="btn btn-wa" data-wa-default data-msg="مرحباً، لدي عمالة أرغب في التنازل عنها ونقل خدماتها" target="_blank" rel="noopener">أرغب بالتنازل</a>
+          <a class="btn btn-outline" data-wa-default data-msg="مرحباً، أبحث عن عمالة متوفرة لنقل الخدمات" target="_blank" rel="noopener">أبحث عن عمالة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="countries">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">الكوادر البشرية</span>
+        <h2>الدول المتاحة للاستقدام</h2>
+        <p class="lead">اضغط على اسم الدولة لإرسال طلبك مباشرة عبر واتساب.</p>
+      </div>
+      <div id="countryGroups"></div>
+    </div>
+  </section>
+
+  <section id="about" class="white">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">من نحن</span>
+        <h2>لماذا تختار <span data-company></span>؟</h2>
+      </div>
+      <div class="grid grid-4" id="whyCards"></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">الآلية والخطوات</span>
+        <h2>كيف نعمل؟</h2>
+        <p class="lead">خطوات سهلة وواضحة للحصول على الخدمة.</p>
+      </div>
+      <div class="grid steps" id="stepsGrid"></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="white">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">معرض الصور</span>
+        <h2>لقطات من مكتبنا وخدماتنا</h2>
+      </div>
+      <div class="grid gallery" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">آراء العملاء</span>
+        <h2>ماذا يقول عملاؤنا عنا</h2>
+      </div>
+      <div class="grid grid-3" id="reviewCards"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="white">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">لديك استفسار؟</span>
+        <h2>الأسئلة الشائعة</h2>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">تواصل معنا</span>
+        <h2>تحتاج مساعدة في اختيار الخدمة المناسبة؟</h2>
+        <p class="lead" style="margin-bottom:24px">املأ النموذج وسيصلنا طلبك عبر واتساب، أو تواصل معنا مباشرة.</p>
+        <div class="info-item hidden" data-show-address><small>العنوان</small><strong data-address></strong></div>
+        <div class="info-item hidden" data-show-phone><small>رقم التواصل</small><strong><a data-phone-link href="#"><span data-phone></span></a></strong></div>
+        <div class="info-item hidden" data-show-email><small>البريد الإلكتروني</small><strong><a data-email-link href="#"><span data-email></span></a></strong></div>
+        <a class="btn btn-wa" data-wa-default data-msg="مرحباً" target="_blank" rel="noopener">تواصل معنا عبر واتساب</a>
+      </div>
+
+      <form id="orderForm">
+        <h3>طلب استقدام جديد</h3>
+        <label for="f-name">الاسم الكريم</label>
+        <input id="f-name" required>
+        <label for="f-phone">رقم الجوال</label>
+        <input id="f-phone" type="tel" required>
+        <label for="f-country">الدولة المطلوبة *</label>
+        <select id="f-country" required></select>
+        <label for="f-job">المهنة المطلوبة *</label>
+        <select id="f-job" required></select>
+        <label for="f-notes">المواصفات المطلوبة</label>
+        <textarea id="f-notes" rows="3"></textarea>
+        <button class="btn btn-primary" type="submit">إرسال الطلب عبر واتساب</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img data-logo alt="الشعار"><span data-company></span></div>
+        <p>شريكك في توفير العمالة المنزلية والمهنية بإجراءات واضحة ومتابعة مستمرة.</p>
+        <p class="hidden" data-show-license>رقم الترخيص: <span data-license></span></p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#transfer">نقل الخدمات</a></li>
+          <li><a href="#countries">الدول</a></li>
+          <li><a href="#contact">طلب جديد</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>بيانات التواصل</h4>
+        <ul>
+          <li class="hidden" data-show-address data-address></li>
+          <li class="hidden" data-show-phone data-phone></li>
+          <li class="hidden" data-show-email data-email></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">جميع الحقوق محفوظة © <span id="year"></span> <span data-company></span></div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa-default data-msg="مرحباً" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
