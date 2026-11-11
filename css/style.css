@@ -54,6 +54,13 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdro
 .hero-art{display:grid;place-items:center}
 .hero-art img{width:min(340px,80%);aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:50%;padding:14px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
 
+/* Trust badges */
+.trust{display:flex;flex-wrap:wrap;gap:20px 36px;margin-top:34px;padding-top:26px;border-top:1px solid rgba(255,255,255,.2)}
+.trust:empty{display:none}
+.trust-item{display:flex;align-items:center;gap:12px;font-weight:700;font-size:1.05rem}
+.trust-icon{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.14);color:#7fe0d2;display:grid;place-items:center;flex:none}
+.trust-icon svg{width:22px;height:22px}
+
 /* Stats */
 .stats{margin-top:-40px;position:relative;z-index:2;padding:0}
 .stats-grid{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);padding:28px;text-align:center;gap:16px}
@@ -154,4 +161,5 @@ footer.site a:hover{color:#fff}
 @media(max-width:560px){
   section{padding:56px 0}
   .grid-3,.grid-4,.gallery,.steps,.feature-list{grid-template-columns:1fr}
+  .trust{gap:16px 24px}
 }

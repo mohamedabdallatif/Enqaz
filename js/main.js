@@ -32,6 +32,16 @@ $("#statsGrid").innerHTML = [
   ["واتساب", "تواصل سريع"],
 ].map(([n, l]) => `<div><strong>${n}</strong><span>${l}</span></div>`).join("");
 
+/* ---- شارات الثقة ---- */
+const ICONS = {
+  shield:   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm0 2.2 6 2.3V11c0 3.9-2.5 7.5-6 8.9V4.2Z"/></svg>',
+  bolt:     '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 4 14h6l-1.5 8L20 9.5h-6.5L13.5 2Z"/></svg>',
+  contract: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M14 3v5h5"/><path d="m11 17 1-3.5 7.2-7.2a1.6 1.6 0 0 1 2.3 2.3L14.3 15.8 11 17Z"/></svg>',
+};
+$("#trustBadges").innerHTML = TRUST_BADGES
+  .filter(b => !b.needsLicense || CONFIG.license)
+  .map(b => `<div class="trust-item"><span class="trust-icon">${ICONS[b.icon] || ""}</span><span>${b.text}</span></div>`).join("");
+
 /* ---- الأقسام ---- */
 $("#serviceCards").innerHTML = SERVICES.map(s => `
   <div class="card"><div class="icon">${s.icon}</div><h3>${s.title}</h3><p>${s.desc}</p>
